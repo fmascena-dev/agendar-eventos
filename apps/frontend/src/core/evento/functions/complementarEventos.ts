@@ -2,7 +2,7 @@ import { Id, Senha } from "@/core/shared";
 import Evento from "../model/Evento";
 import validarEvento from "./validarEvento";
 
-export default function complementarEvento(eventoParcial: Partial<Evento>): Evento {
+export default function complementarEventos(eventoParcial: Partial<Evento>): Evento {
     const erros = validarEvento(eventoParcial);
 
     if (erros.length > 0) {
